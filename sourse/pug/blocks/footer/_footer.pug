@@ -1,8 +1,39 @@
 mixin footer()
 	+b.FOOTER.footer
 		.container
-			.row
-				.col
-				.col
-				.col
-				.col-auto
+			+e.row.row
+				+e.col--left.col.col-md-auto.col-lg-4.col-xl-auto
+					+e.logo(href="/")
+						img(loading="lazy" src="img/@2x/logo.png" alt="")
+					.d-none.d-md-block
+						ul.menu
+							li.menu-item: a(href="#") услуги
+							li.menu-item: a(href="#") портфолио
+							li.menu-item: a(href="#") продукция
+							li.menu-item: a(href="#") клиенты
+							li.menu-item: a(href="#") отзывы
+							li.menu-item: a(href="#") видео
+							li.menu-item: a(href="#") блог
+					.d-md-none
+						+footerDMnu()
+				+e.col--mid.col-md-4.col-xl-auto.d-none.d-md-block
+					+e.input-wrap
+						+e.INPUT.input.form-control(type="text" placeholder="поиск по сайту")
+						+e.btn(type="button")
+							+icon('zoom')
+				+e.col--right.col-md-4.col-xl-auto.d-none.d-md-block
+					+e.d-title СКАЧАТЬ
+					+footerDMnu()
+				//-
+				.col-auto.d-md-none
+					+e.btn--static(type="button")
+						+icon('zoom')
+
+mixin footerDMnu()
+	+e.d-mnu
+		ul
+			li: a(href="#") договор
+			li: a(href="#") прайс-лист
+			li: a(href="#") диагностика
+			li: a(href="#") тех.требования
+			li: a(href="#") образец тех.задания

@@ -1,5 +1,136 @@
 // start .sContact
 .sContact {
+	--sPT: #{rem(40)};
+	--sPB: #{rem(45)};
+	--sTPB: #{rem(30)};
+	@include media-breakpoint-up(lg){
+		--sPT: 0;
+		--sPB: 0;
+		--sTPB: #{rem(29)};
+	}
+
+	background-color: $gray-840;
+	color: $white;
+
+	&__container{
+		@include media-breakpoint-up(lg){
+			max-width: 100% !important;
+			padding: 0!important;
+		}
+	}
+	&__col{
+
+		&--left{
+			@include media-breakpoint-up(lg){
+				width: 60%;
+			}
+		}
+		&--right{
+			@include media-breakpoint-up(lg){
+				padding: rem(60) rem(40);
+			}
+			@include media-breakpoint-up(xl){
+				padding: 74px rem(20) rem(20) 88px;
+			}
+		}
+	}
+	&__map{
+		height: rem(554);
+		@include media-breakpoint-down(lg){
+			margin: rem(20) 0;
+
+			width: 100vw;
+			left: calc(-1 * (100vw - 100%) /2);
+		}
+		background-color: $black;
+		position: relative;
+		filter: grayscale(1);
+
+		& > ymaps{
+			position: absolute!important;
+			top: 0!important;
+			left: 0!important;
+			width: 100% !important;
+			height: 100% !important;
+		}
+	}
+	//
+	.section-title{
+		h2{
+
+		}
+	}
+	&__items{
+		margin-bottom: rem(40);
+
+		font-size: 10.5px;
+		@include media-breakpoint-up(md){
+			font-size: rem(18);
+		}
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	&__item{
+		display: flex;
+		align-items: center;
+
+		color: $white;
+
+		margin-bottom: rem(8);
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	&__icon-wrap{
+		width: rem(25);
+		margin-right: 8px;
+
+		.icon{
+			font-size: rem(21);
+		}
+	}
+	&__txt{}
+
+	.soc{
+		&__item{
+			margin-right: 20px;
+			.icon{
+				font-size: 20px;
+				@include media-breakpoint-up(sm){
+					font-size: rem(48);
+				}
+			}
+
+			&.soc-inst{
+				.icon{
+					font-size: 20px;
+					@include media-breakpoint-up(sm){
+						font-size: rem(50);
+					}
+				}
+			}
+			&.soc-yt{
+				.icon{
+					font-size: 20px;
+					@include media-breakpoint-up(sm){
+						font-size: rem(48);
+					}
+				}
+			}
+			&.soc-vk{
+				.icon{
+					font-size: 20px;
+					@include media-breakpoint-up(sm){
+						font-size: rem(41);
+					}
+				}
+			}
+
+
+		}
+	}
+	&__{}
 	&__{}
 	&__{}
 	&__{}

@@ -4,12 +4,14 @@
 	--sPB: 30px;
 	--sTPB: #{rem(20)};
 	@include media-breakpoint-up(md){
-		--sPT: #{rem(55)};
-		--sPB: #{rem(90)};
+		--sPT: #{rem(40)};
+		--sPB: #{rem(50)};
 		--sTPB: #{rem(25)};
 	}
 	@include media-breakpoint-up(lg){
+		--sPT: #{rem(55)};
 		--sTPB: #{rem(45)};
+		--sPB: #{rem(72)};
 	}
 
 	background-color: $gray-840;

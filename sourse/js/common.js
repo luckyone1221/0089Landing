@@ -415,8 +415,22 @@ function eventHandler() {
 			swiper: sFeedBackThumbSlider,
 		},
 	});
-	//end luckyOne Js
+	//
+	let sVideoSlider = new Swiper('.sVideo-slide-js', {
+		//-loop: true,
 
+		navigation: {
+			nextEl: '.swiper-next',
+			prevEl: '.swiper-prev',
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+	});
+
+	//end luckyOne Js
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

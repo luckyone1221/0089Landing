@@ -1,9 +1,32 @@
 mixin sVideo(data)
 	// start sVideo
-	+b.SECTION.sVideo.section#sVideo&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 sVideo
-				
-			.row
+	+b.sVideo.section#sVideo&attributes(attributes)
+		+e.container.container-lg
+			+e.slider-wrap
+				.swiper.sVideo-slide-js
+					.swiper-wrapper
+						-for(var i = 1; i < 4; i++)
+							+sVideoSlide(i)
+					+e.controls-wrap
+						+e.c-box--brand
+							+e.controls
+								+e.prev.swiper-prev
+									+icon('chevron-left')
+								+e.c-title.d-none.d-lg-inline видеопрезентации
+								+e.next.swiper-next
+									+icon('chevron-right')
+							.swiper-pagination.d-none.d-lg-flex
 	// end sVideo
+
+mixin sVideoSlide(slideNum)
+	.swiper-slide
+		+e.row.row
+			+e.col--right.col-lg
+				+e.video-box(href="https://www.youtube.com/watch?v=i1XzE97bzXw" data-fancybox=`video${slideNum}`)
+					img(loading="lazy" src="img/@2x/sVideo.png" alt="")
+			+e.col--left.col-lg-auto.text-lg-end.order-lg-first
+				+e.box
+					+e.b-cont.container
+						+e.title(href="#") РАЗРАБОТКА ВИДЕОМЕНЮ для сети кафе KEBAB HOUSE
+						+e.loc Афонино, 2021
+						+e.det(href="#") подробнее о проекте

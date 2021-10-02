@@ -1,0 +1,27 @@
+mixin sWhy(data)
+	// start sWhy
+	+b.SECTION.sWhy.section#sWhy&attributes(attributes)
+		+e.container.container
+			+b.section-title--lined
+				h2 ПОЧЕМУ
+				p выгодно работать С НАМИ?
+			+e.row.row
+				+e.col--left.col-md-6
+					+sWhyItem('до 10 лет гарантии', 'на рекламные конструкции')
+					+sWhyItem('Шоу Рум + образцы', 'продукции и демо-материалы')
+					+sWhyItem('Ответственность', `и заинтересованность <br class="d-none d-sm-block"> в результате`)
+				+e.col--right.col-md-6.col-lg-auto.ms-auto.text-md-end
+					+sWhyItem(`сВое производство`, 'полного цикла')
+					+sWhyItem('бесплатный дизайн', 'при заказе рекламы')
+					+sWhyItem('более 10 лет', `успешной работы <br class="d-none d-sm-block"> на рекламном рынке`)
+			+e.bg--dt.d-none.d-md-flex
+				img(loading="lazy" src="img/@2x/sWhy-shadow.png" alt="")
+		+e.bg--mob.d-md-none
+			img(loading="lazy" src="img/@2x/sWhy-mob-2.png" alt="")
+
+	// end sWhy
+
+mixin sWhyItem(title, descr)
+	+e.item(href="#")
+		+e.title!=title
+		+e.descr!=descr

@@ -1,10 +1,75 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock.section#headerBlock&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-
-			.row
-						
+	+b.headerBlock#headerBlock&attributes(attributes)
+		+e.slider-wrap
+			.swiper.headerBlock-slider-js
+				.swiper-wrapper
+					-for(let i = 0; i < 3; i++)
+						+headerBlockSlide()
+				+e.controls-wrap
+					+e.c-box
+						+e.controls
+							+e.prev.swiper-prev
+								+icon('chevron-left')
+							+e.c-title.d-none.d-sm-inline дизайн-студиЯ
+							+e.next.swiper-next
+								+icon('chevron-right')
+						.swiper-pagination.d-none.d-sm-flex
 	// end headerBlock
+
+mixin headerBlockBrand()
+	// start headerBlock
+	+b.headerBlock--brand#headerBlock&attributes(attributes)
+		+e.slider-wrap
+			.swiper.headerBlock-slider-js
+				.swiper-wrapper
+					-for(let i = 0; i < 3; i++)
+						+headerBlockSlideBrand()
+				+e.controls-wrap--brand
+					+e.c-box--brand
+						+e.controls
+							+e.prev.swiper-prev
+								+icon('chevron-left')
+							+e.c-title.d-none.d-sm-inline дизайн-студиЯ
+							+e.next.swiper-next
+								+icon('chevron-right')
+						.swiper-pagination.d-none.d-sm-flex
+				//-headerBlock-gradient
+
+mixin headerBlockSlide()
+	.swiper-slide
+		+e.main-row.row
+			+e.col--left.col-auto
+				+e.box.text-sm-end
+					+e.title(href="#")
+						| Проект ларька
+						|
+						span.d-none.d-sm-inline БЫСТРОГО ПИТАНИЯ
+						|
+						| FAST&#160;&&#160;FOOD
+					+e.loc Нижний Новгород, 2020
+					+e.det.d-none.d-sm-block(href="#") подробнее о проекте
+			+e.col--right.col-sm
+				+e.img-row.row
+					-for(let i = 1; i <= 6; i++)
+						+headerBlockSlideImg(i)
+
+mixin headerBlockSlideBrand()
+	.swiper-slide
+		+e.main-row.row
+			+e.col--right.col-sm
+				+e.img-row.row
+					-for(let i = 1; i <= 6; i++)
+						+headerBlockSlideImg(i)
+			+e.col--left.col-auto
+				+e.box--brand
+					+e.title(href="#") БРЕНДИРОВАНИЕ АВТОМОБИЛЯ LEXUS NX ДЛЯ САЛОНА ОПТИКИ PRAVDA
+					+e.loc Нижний Новгород, 2020
+					+e.det.d-none.d-sm-block(href="#") подробнее о проекте
+
+
+mixin headerBlockSlideImg(imgNum)
+	+e.img-col.col-md-6.col-lg-4
+		+e.img(href="#")
+			img(loading="lazy" src=`img/@2x/headerBlock-day-${imgNum}.jpg` alt="")
+			img(loading="lazy" src=`img/@2x/headerBlock-${imgNum}.jpg` alt="")

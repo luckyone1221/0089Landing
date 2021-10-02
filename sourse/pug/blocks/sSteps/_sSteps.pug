@@ -1,0 +1,48 @@
+mixin sSteps(data)
+	// start sSteps
+	+b.SECTION.sSteps.section#sSteps&attributes(attributes)
+		.container
+			+b.section-title
+				h2 6 шагов
+				p к эффективной рекламной кампании
+			+e.descr
+				p Компания «Центр Рекламы» оснащена высокотехнологичным оборудованием и использует самые современные материалы, устойчивые к воздействию неблагоприятных внешних факторов. Мы внимательно изучаем сферу деятельности клиента и предлагаем ему наиболее действенные варианты. Специалисты выполнят весь комплекс работ:
+			+e.row.row
+				+sStepsItem({
+					imgNum: 1,
+					txt: 'Оставляете заявку',
+				})
+				+sStepsItem({
+					imgNum: 2,
+					txt: 'Бесплатный дизайн-макет',
+				})
+				+sStepsItem({
+					imgNum: 3,
+					txt: 'Согласование с городом',
+				})
+				+sStepsItem({
+					imgNum: 4,
+					txt: 'Производство',
+				})
+				+sStepsItem({
+					imgNum: 5,
+					txt: 'Монтаж',
+				})
+				+sStepsItem({
+					imgNum: 6,
+					txt: 'Обслуживание и ремонт',
+				})
+			+e.lower-txt
+				p Все работы выполняются точно в срок. Мастера «Центра Рекламы» ежегодно повышают квалификацию и способны оперативно изготовить самую замысловатую вывеску или стелу, нестандартно оформить фасад или козырек. Мы бесплатно выезжаем на диагностику и замеры, консультируем клиентов по техническим вопросам и получению разрешения, составляем подробную смету.
+	// end sSteps
+
+mixin sStepsItem(data)
+	.col-4.col-xl
+		+e.item.text-center
+			+e.circle-cont
+				+e.circle
+					//-circle-arrow
+					img(loading="lazy" src=`img/@2x/step-${data.imgNum}.png` alt="")
+			+e.i-img
+				img(loading="lazy" src=`img/svg/step-svg-${data.imgNum}.svg` alt="")
+			+e.i-txt=data.txt

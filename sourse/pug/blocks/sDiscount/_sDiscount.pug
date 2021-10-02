@@ -1,0 +1,46 @@
+mixin sDiscount(data)
+	// start sDiscount
+	+b.SECTION.sDiscount.section#sDiscount&attributes(attributes)
+		.container
+			+e.bg--dt.d-none.d-md-flex
+				img(loading='lazy' src="img/svg/sDiscount-bg.svg" alt="")
+			+e.bg--mob.d-md-none
+				img(loading='lazy' src="img/svg/sDiscount-bg-mob.svg" alt="")
+			+b.section-title--lined
+				h2 скидки и акции
+			+e.row.row.justify-content-center
+				+sDiscountItem({
+					ballTxt: '-15%',
+					title: 'на изготовление наружной рекламы',
+					sm: 'при заказе брендбука',
+					btnTxt: 'Смотреть все работы',
+				})
+				+sDiscountItem({
+					ballTxt: '-10%',
+					title: 'на ВСЕ УСЛУГИ ДИЗАЙНА',
+					sm: 'при заказе через сайт',
+					btnTxt: 'Сделать заказ online',
+				})
+				+sDiscountItem({
+					ballTxt: '+100',
+					title: 'ВИЗИТОК В ПОДАРОК',
+					sm: 'за оставленный отзыв на Яндекс.Картах',
+					btnTxt: 'Добавить отзыв',
+				})
+			+e.t-title новые акции и предложения через
+			+e.timer-box.timer-box-js
+				span.days 18
+				span.hours 22
+				span.minutes 59
+				span.seconds 03
+	// end sDiscount
+
+mixin sDiscountItem(data)
+	+e.col.col-md-4.col-lg-auto
+		+e.item.text-center
+			+e.ball-cont
+				+e.ball
+					+e.ball-txt=data.ballTxt
+			+e.title=data.title
+			+e.sm=data.sm
+			+e.btn(href="#")=data.btnTxt

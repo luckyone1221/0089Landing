@@ -1,13 +1,14 @@
 
-$h: em(2);
+$h: 2px;
 
 .toggle-menu-mobile {
 	display: block;
-	height: $h* 12;
 	position: relative;
-	color: $primary;
+	color: $white;
+
 	font-size: 32px;
-	width: 1em;
+	width: 20px;
+	height: 32px;
 	cursor: pointer;
 	
 	&.on {
@@ -26,13 +27,11 @@ $h: em(2);
 	}
 
 	span:before {
-
-
-		top: $h * 2;
+		top: 8px;
 	}
 
 	span:after {
-		bottom: $h * 2;
+		bottom: 8px;
 	}
 
 	span { 
@@ -43,7 +42,7 @@ $h: em(2);
 	span:after,
 	span:before {
 		// width: 32px;
-		width: 1em;
+		width: 20px;
 		height: $h;
 		background-color: currentColor;
 		transition: all 0.3s;
@@ -96,7 +95,8 @@ $h: em(2);
 	will-change: transform;
 
 	&__inner {
-		padding: rem(20) 0;
+		padding: rem(40) rem(30);
+		background-color: $gray-900;
 		overflow-x: hidden;
 		overflow-y: auto;
 		-webkit-overflow-scrolling: touch;
@@ -104,6 +104,16 @@ $h: em(2);
 		@include mt(.3s);
 		transition-delay: .4s;
 		opacity: var(--opacity);
+	}
+	&__logo{
+		display: block;
+		width: 100%;
+
+		img{
+			width: auto;
+			max-width: 100%;
+		}
+		margin-bottom: rem(30);
 	}
 
 	&.active { 
@@ -140,21 +150,20 @@ $h: em(2);
 		}
 	}
 
-	ul {
-		position: relative;
-	}
+	.menu{
+		padding: 0;
+		margin: 0 0 rem(30);
+		list-style: none;
 
-	li {
-		display: block;
-		margin: 0;
-		border-top: 1px solid rgba(255, 255, 255, .13);
+		& > .menu-item{
+			margin-bottom: rem(15);
+			&:last-child{
+				margin-bottom: 0;
+			}
 
-		a {
-			// font-size: 16px;
-
-			padding: 10px;
-			display: block;
-
+			& > a{
+				color: $white;
+			}
 		}
 	}
 }

@@ -1,0 +1,53 @@
+mixin sPlates(data)
+	// start sPlates
+	+b.SECTION.sPlates.section#sPlates&attributes(attributes)
+		.container
+			+b.section-title--lined.d-md-none
+				h2 УСЛУГИ
+			+e.row.row.justify-content-center
+				+sPlatesItem({
+					title: 'Дизайн студия',
+					imgNum: 1,
+					descr: 'Создание уникального стиля для Вашей компании',
+					price: '2000',
+				})
+				+sPlatesItem({
+					title: 'Наружная реклама',
+					imgNum: 2,
+					descr: 'Полный цикл производства, монтажа и ремонта рекламных конструкции',
+					price: '8000',
+				})
+				+sPlatesItem({
+					title: 'Фрезерная и лазерная резка',
+					imgNum: 3,
+					descr: 'Услуги по оперативной резке и обработке материала',
+					price: '500',
+				})
+				+sPlatesItem({
+					title: 'Согласование',
+					imgNum: 4,
+					descr: 'Согласование рекламных конструкций на муниципальном уровне',
+					price: '5000',
+				})
+				+sPlatesItem({
+					title: 'Архитектурная подсветка',
+					imgNum: 5,
+					descr: 'Архитектурное освещение зданий, сооружений и объектов',
+					price: '9000',
+				})
+	// end sPlates
+
+mixin sPlatesItem(data)
+	+e.col.col-md-4.col-xl-auto.text-md-center
+		+icon('chevron-right', 'd-md-none')
+		+e.item(href="#")
+			+e.title=data.title
+			+e.img.d-none.d-md-flex
+				img(loading="lazy" src=`img/svg/sPlates-${data.imgNum}.svg` alt="")
+			+e.descr=data.descr
+			+e.price.d-none.d-md-inline
+				| от
+				|
+				+e.SPAN.p-val=data.price
+				|
+				| Р

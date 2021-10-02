@@ -3,10 +3,16 @@ extends layout/main.pug
 
 include ../blocks/sContent/_sContent.pug
 include ../blocks/sContact/_sContact.pug
+include ../blocks/sPlates/_sPlates.pug
+include ../blocks/sSteps/_sSteps.pug
+include ../blocks/sDiscount/_sDiscount.pug
+include ../blocks/sWhy/_sWhy.pug
+include ../blocks/sFeedBack/_sFeedBack.pug
 
 block variables
 	- let  mainPage= 'main-page' 
-	- let  bg= null
+	//- let  bg="index-2.png"
+	- let  bg="index-320.jpg"
 
 block title
 	- let  title= 'title'
@@ -14,14 +20,16 @@ block title
 block pagecontent
 	+mob-mnu()
 	+header()
-	+top-nav()
-	
-	+topLine()
+		+top-nav()
+		+topLine()
 	+headerBlock()
-	+sForm()
-	+sContact()
+	+sPlates()
+	+sSteps()
+	+sDiscount()
+	+headerBlockBrand()
+	+sWhy()
+	+sFeedBack()
+	//+sPlates()
+	//+sForm()
+	//+sContact()
 	+footer()
-      
-
-
-

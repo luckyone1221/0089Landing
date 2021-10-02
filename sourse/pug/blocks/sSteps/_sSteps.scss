@@ -1,0 +1,159 @@
+// start .sSteps
+.sSteps {
+	color: $white;
+
+	background-image: url(../img/@2x/gradient.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	--sPT: 15px;
+	--sPB: 16px;
+	--sTPB: 12px;
+	@include media-breakpoint-up(md){
+		--sPT: #{rem(86)};
+		--sPB: #{rem(63)};
+		--sTPB: #{rem(40)};
+	}
+
+	//-
+	.section-title{
+		h2{
+			line-height: 1;
+			margin-bottom: -3px;
+			@include media-breakpoint-up(sm){
+				margin-bottom: 3px;
+			}
+		}
+		p{
+			font-size: 10.5px;
+			@include media-breakpoint-up(sm){
+				text-transform: uppercase;
+				font-size: rem(24);
+			}
+		}
+	}
+	&__descr{
+		margin-bottom: 20px;
+		@include media-breakpoint-up(sm){
+			margin-bottom: rem(57);
+		}
+
+		line-height: 1.2;
+		font-size: 10.5px;
+		@include media-breakpoint-up(sm){
+			line-height: 1.1;
+			font-size: rem(18);
+		}
+	}
+	&__row{
+		--bs-gutter-y: 30px;
+
+		margin-bottom: rem(40);
+		@include media-breakpoint-up(xxl){
+			margin-left: -22px;
+			margin-right: -40px;
+		}
+
+		@include media-breakpoint-down(sm){
+			margin-bottom: 15px;
+			padding-right: 10px;
+			--bs-gutter-x: 24px;
+		}
+		& > *{
+			&:last-child{
+				--cicle-img: url(../img/svg/circle.svg);
+				--bef-w: 100%;
+			}
+		}
+	}
+	&__item{
+
+	}
+	&__circle-cont{
+		width: rem(155);
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	&__circle{
+		display: block;
+		width: 100%;
+		height: 0;
+		position: relative;
+		padding-top: 100%;
+		margin-bottom: rem(11);
+		@include media-breakpoint-up(md){
+			margin-bottom: rem(28);
+
+		}
+
+		img{
+			position: absolute;
+			width: auto;
+			height: auto;
+
+			top: 27%;
+			left: 62%;
+			transform: translateX(-50%);
+			max-width: 75%;
+			max-height: 75%;
+		}
+
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: var(--bef-w, calc(189/154 * 100%));
+
+			background-image: var(--cicle-img, url(../img/svg/circle-arrow.svg));
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			height: 100%;
+		}
+	}
+	&__i-img{
+		width: 60px;
+		height: 60px;
+		margin: 0 auto rem(5);
+		@include media-breakpoint-up(sm){
+			width: rem(120);
+			height: rem(120);
+			margin: 0 auto rem(22);
+		}
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img{
+			width: auto;
+			height: auto;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	&__i-txt{
+		font-size: 9.5px;
+		@include media-breakpoint-up(sm){
+			font-size: rem(18);
+			max-width: 123px;
+		}
+		line-height: 1.2;
+		margin: 0 auto;
+	}
+	&__lower-txt{
+		line-height: 1.2;
+
+		font-size: 10.5px;
+		@include media-breakpoint-up(sm){
+			font-size: rem(18);
+		}
+		p{
+
+		}
+	}
+
+	//-
+	&__{}
+	&__{}
+} // end.sSteps

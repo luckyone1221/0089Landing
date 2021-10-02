@@ -1,49 +1,82 @@
 .top-nav {
-	// background: svg-load('../svg/check.svg',  stroke=$primary); 
-	// 
-	@include media-breakpoint-up(xl) {
-		background-color: #000;
-		border: 1px solid #000;
+	background-color: $primary;
+	background-image: url(../img/@2x/gradient.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	--link-px: #{rem(20)};
+	@include media-breakpoint-up(xxl){
+		--link-px: #{rem(28)};
 	}
 
-	@include media-breakpoint-up(lg) {
-		background-color: red;
-
-	}
-	p{
-		@include ell();
+	padding: 23px 0 7px;
+	@include media-breakpoint-up(lg){
+		padding: 0;
 	}
 
-	@include media-breakpoint-up(md) {}
+	&__container{
+		@include media-breakpoint-up(xxl){
+			padding-left: 45px;
+			//padding-right: 20px;
+		}
+	}
+	&__row{
+		--bs-gutter-x: 12px;
+		@include media-breakpoint-up(sm){
+			--bs-gutter-x: #{rem(20)};
+		}
+	}
 
-	@include media-breakpoint-up(sm) {}
+	.menu{
+		list-style: none;
+		padding: 0;
+		margin: 0 calc(var(--link-px, 20px) * -1);
 
-	@include media-breakpoint-up(xs) {}
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 
-	// 
-	@include media-breakpoint-between(md, xl) {}
+		& > .menu-item{
 
-	// 
-	@include media-breakpoint-only(xs) {}
+			& > a{
+				display: block;
+				padding: rem(15) var(--link-px, 20px);
 
-	@include media-breakpoint-only(sm) {}
+				background-color: transparent;
+				color: $white;
+				&:hover{
+					background-color: $primary;
+					color: $black;
+				}
+			}
+		}
+	}
 
-	@include media-breakpoint-only(md) {}
+	//--
+	&__order{
+		color: $white!important;
 
-	@include media-breakpoint-only(lg) {}
+		font-size: 10.5px;
+		@include media-breakpoint-up(sm){
+			font-size: rem(14);
+		}
+	}
+	&__btn{
+		@extend .btn;
+		padding: 0;
+		outline: none;
+		margin: 0;
 
-	@include media-breakpoint-only(xl) {}
+		.icon{
+			color: $white;
 
-	// 
-	@include media-breakpoint-down(xl) {}
-
-	@include media-breakpoint-down(lg) {}
-
-	@include media-breakpoint-down(md) {}
-
-	@include media-breakpoint-down(sm) {}
-
-	@include media-breakpoint-down(xs) {}
+			font-size: 15px;
+			@include media-breakpoint-up(sm){
+				font-size: rem(24);
+			}
+		}
+	}
+	&__{}
 }
 
 

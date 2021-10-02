@@ -1,0 +1,58 @@
+mixin sFeedBack(data)
+	// start sFeedBack
+	+b.SECTION.sFeedBack.section#sFeedBack&attributes(attributes)
+		+e.container.container
+			+b.section-title
+				h2 ЗАКАЗЧИКИ О НАС
+		+e.slider-wrap
+			.swiper.sFeedBack-slider-js
+				.swiper-wrapper
+					-for(let i = 0; i < 7; i++)
+						+sFeedBackSlide(i)
+				.c
+	// end sFeedBack
+
+mixin sFeedBackSlide(slideNum)
+	.swiper-slide
+		.container
+			+e.row.row
+				+e.col--left.col-auto
+					+e.orange-cont
+						+e.logo(href="#")
+							img(loading="lazy" src="img/@2x/sFeedBack-logo.png" alt="")
+						+e.title-wrap
+							+e.title ГК Каркас Монолит
+							+e.prev.swiper-prev
+								+icon('chevron-left')
+							+e.next.swiper-next
+								+icon('chevron-right')
+						+e.descr
+							p Группа Компаний Каркас монолит является крупнейшим застройщиком или кто они там во всем городе да и вообще пиздец
+				+e.col--rigth.col
+					+e.box
+						p
+							| Центр Рекламы вообще самые крутые ребята в городе! Делают все за копейки, без предоплаты, да и вообще бесплатно!  Директор красаучег, на производстве одни инженеры, монтажники трезвые, дизайнер так вообщем прямо супер-пупер!
+							br
+							| Короче, будем сотрудничать вечно. Если, конечно, они сами захотят
+
+						p
+							| Директор ГК Каркас монолит.
+							br
+							| Иванов И.И.
+					+e.btn-row.row
+						.col-auto
+							+e.btn(href="#") ДОБАВИТЬ ОТЗЫВ
+						.col.text-end
+							+e.map(href="#") Смотреть отзыв на Яндекс.Картах
+					+e.all(href="#") Награды и благодарственные письма от ГК Каркас Монолит
+					//like.svg
+		+e.sub-slider.d-none
+			.swiper.sFeedBack-sub-slider-js
+				.swiper-wrapper
+					-for(let i = 1; i <=5; i++)
+						+sFeedBackSubSlider(i, slideNum)
+
+mixin sFeedBackSubSlider(imgNum, parentSlideNum)
+	.swiper-slide
+		+e.sub-img(href="#" data-fancybox=`Galery${parentSlideNum}`)
+			img(loading="lazy" src=`img/@2x/sFeedBack-sub-${imgNum}.png` alt="")

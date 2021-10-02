@@ -1,28 +1,38 @@
 mixin mob-mnu()
-	-
-		//- let path = require('path');
-		//- let fs = require('fs');
-		//- var requestURL = 'top-nav.json';
-		//- var request = new XMLHttpRequest();
-		//- request.open('GET', requestURL);
-		//- request.responseType = 'json';
-		//- let dataJson = JSON.parse(json);
-	//- h1= dataJson['lala'] 
 	+b.menu-mobile--js.d-lg-none
 		+b.toggle-menu-mobile--js
 			span
 		+e.inner
+			+e.logo(href="/")
+				img(loading="lazy" src='img/@2x/logo.png' alt="")
 			+mnu()
+			+b.tl-link--tel.mb-3.mt-auto(href="tel:2301010")
+				+icon('tell')
+				span +7 (831) 230 10 10
+			+b.tl-link--mail.mb-3(href="mailto:nnreklama@mai.ru")
+				+icon('soc-mail')
+				span nnreklama@mai.ru
+			+b.tel-links.mb-3
+				a(href="#")
+					+icon('soc-wa')
+				a(href="#")
+					+icon('soc-vb')
+				a(href="tel:+79503431010") +7 950 343 10 10
 	//  мобильное меню
+
 mixin top-nav() 
 	// start top-nav
-	+b.top-nav.block-with-lazy
-		.container
-			.row
+	+b.top-nav.block-with-lazy&attributes(attributes)
+		+e.container.container
+			+e.row.row.align-items-center
+				.col.d-none.d-lg-block
+					+mnu()
+				.col-auto.ms-auto.d-lg-none
+					+e.order(href="#") Заказать online
+				.col-auto.d-lg-none
+					+e.btn(type="button")
+						+icon('zoom')
 				.col-auto.d-lg-none
 					+b.toggle-menu-mobile--js
 						span
-				.col.d-none.d-lg-block
-					+mnu()
-					
 	// end top-nav

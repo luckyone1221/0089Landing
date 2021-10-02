@@ -8,11 +8,13 @@ include ../blocks/sSteps/_sSteps.pug
 include ../blocks/sDiscount/_sDiscount.pug
 include ../blocks/sWhy/_sWhy.pug
 include ../blocks/sFeedBack/_sFeedBack.pug
+include ../blocks/sNews/_sNews.pug
+include ../blocks/sVideo/_sVideo.pug
 
 block variables
 	- let  mainPage= 'main-page' 
-	//- let  bg="index-2.png"
-	- let  bg="index-320.jpg"
+	- let  bg="index-2.png"
+	//- let  bg="index-320.jpg"
 
 block title
 	- let  title= 'title'
@@ -29,6 +31,8 @@ block pagecontent
 	+headerBlockBrand()
 	+sWhy()
 	+sFeedBack()
+	+sNews()
+	+sVideo()
 	//+sPlates()
 	//+sForm()
 	//+sContact()

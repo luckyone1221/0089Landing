@@ -389,6 +389,16 @@ function eventHandler() {
 		},
 	});
 	//
+	let sFeedBackThumbSlider = new Swiper('.sFeedBack-thumb-slider-js', {
+		slidesPerView: 'auto',
+		//loop: true,
+
+		navigation: {
+			nextEl: '.swiper-sub-next',
+			prevEl: '.swiper-sub-prev',
+		},
+	});
+
 	let sFeedBackSlider = new Swiper('.sFeedBack-slider-js', {
 		loop: true,
 
@@ -401,9 +411,10 @@ function eventHandler() {
 			type: 'bullets',
 			clickable: true,
 		},
+		thumbs: {
+			swiper: sFeedBackThumbSlider,
+		},
 	});
-
-
 	//end luckyOne Js
 
 };

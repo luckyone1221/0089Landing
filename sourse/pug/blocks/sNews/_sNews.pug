@@ -1,0 +1,21 @@
+mixin sNews(data)
+	// start sNews
+	+b.SECTION.sNews.section#sNews&attributes(attributes)
+		.container
+			+e.row.row
+				+e.col--left.col-lg-6.col-xl-auto
+					+b.section-title
+						h2 НОВОСТИ КОМПАНИИ
+					+sNewsItem('16.05.2020', '«Центр Рекламы» и Центральный филиал ПАО "Саровбизнесбанк" продолжают сотрудничество')
+					+sNewsItem('16.05.2020', '«Центр Рекламы» и Центральный филиал ПАО <br class="d-none d-xl-block"> "Саровбизнесбанк" продолжают сотрудничество')
+				+e.col--right.col-lg-6.col-xl
+					+b.section-title
+						h2 БЛОГ
+					+sNewsItem('16.05.2020', 'Наружная реклама в районах Нижнего Новгорода')
+					+sNewsItem('16.05.2020', `Наружная реклама в районах Нижнего <br class="d-none d-xl-block"> Новгорода`)
+	// end sNews
+
+mixin sNewsItem(date, txt)
+	+e.item(href='#')
+		+e.date!=date
+		+e.txt!=txt

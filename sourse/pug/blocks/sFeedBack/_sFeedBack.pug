@@ -4,30 +4,49 @@ mixin sFeedBack(data)
 		+e.container.container
 			+b.section-title
 				h2 ЗАКАЗЧИКИ О НАС
-		+e.slider-wrap
-			.swiper.sFeedBack-slider-js
-				.swiper-wrapper
-					-for(let i = 0; i < 7; i++)
-						+sFeedBackSlide(i)
-				.c
+		+e.main-row.row.gx-0
+			.col-12
+				+e.slider-wrap
+					.swiper.sFeedBack-slider-js
+						.swiper-wrapper
+							-for(let i = 0; i < 5; i++)
+								+sFeedBackSlide(i)
+			.col-12
+				+e.sub-slider
+					.swiper.sFeedBack-thumb-slider-js
+						.swiper-wrapper
+							-for (let i = 1; i <= 5; i++)
+								+sFeedBackSubSlider(i)
+						+e.alt-prev.swiper-prev
+							img(loading="lazy" src="img/svg/box-left.svg" alt="")
+							+icon('chevron-left')
+						+e.alt-next.swiper-next
+							img(loading="lazy" src="img/svg/box-right.svg" alt="")
+							+icon('chevron-right')
 	// end sFeedBack
 
 mixin sFeedBackSlide(slideNum)
 	.swiper-slide
-		.container
+		+e.slide-cont.container
 			+e.row.row
-				+e.col--left.col-auto
+				+e.col--left.col-md-auto
 					+e.orange-cont
-						+e.logo(href="#")
+						+e.logo.d-none.d-md-block(href="#")
 							img(loading="lazy" src="img/@2x/sFeedBack-logo.png" alt="")
-						+e.title-wrap
-							+e.title ГК Каркас Монолит
-							+e.prev.swiper-prev
-								+icon('chevron-left')
-							+e.next.swiper-next
-								+icon('chevron-right')
-						+e.descr
-							p Группа Компаний Каркас монолит является крупнейшим застройщиком или кто они там во всем городе да и вообще пиздец
+						+e.orange-row.row.align-items-center
+							.col-auto.d-md-none
+								+e.mob-logo(href="#")
+									img(loading="lazy" src="img/@2x/sFeedBack-mob-logo.png" alt="")
+							.col.col-md-12
+								+e.title-wrap
+									+e.prev.swiper-prev
+										+icon('chevron-left')
+									+e.title ГК Каркас Монолит
+									+e.next.swiper-next
+										+icon('chevron-right')
+								+e.descr
+									p=`Группа Компаний Каркас монолит является крупнейшим застройщиком или кто они там во всем городе да и вообще пиздец${slideNum}`
+						.swiper-pagination.d-none.d-md-flex
 				+e.col--rigth.col
 					+e.box
 						p
@@ -42,17 +61,11 @@ mixin sFeedBackSlide(slideNum)
 					+e.btn-row.row
 						.col-auto
 							+e.btn(href="#") ДОБАВИТЬ ОТЗЫВ
-						.col.text-end
+						.col.text-lg-end
 							+e.map(href="#") Смотреть отзыв на Яндекс.Картах
 					+e.all(href="#") Награды и благодарственные письма от ГК Каркас Монолит
-					//like.svg
-		+e.sub-slider.d-none
-			.swiper.sFeedBack-sub-slider-js
-				.swiper-wrapper
-					-for(let i = 1; i <=5; i++)
-						+sFeedBackSubSlider(i, slideNum)
 
-mixin sFeedBackSubSlider(imgNum, parentSlideNum)
+mixin sFeedBackSubSlider(imgNum)
 	.swiper-slide
-		+e.sub-img(href="#" data-fancybox=`Galery${parentSlideNum}`)
+		+e.sub-img
 			img(loading="lazy" src=`img/@2x/sFeedBack-sub-${imgNum}.png` alt="")

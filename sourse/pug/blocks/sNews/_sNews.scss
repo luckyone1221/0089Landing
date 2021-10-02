@@ -1,0 +1,71 @@
+// start .sNews
+.sNews {
+	--sPT: 30px;
+	--sPB: 30px;
+	--sTPB: #{rem(20)};
+	@include media-breakpoint-up(md){
+		--sPT: #{rem(55)};
+		--sPB: #{rem(90)};
+		--sTPB: #{rem(25)};
+	}
+	@include media-breakpoint-up(lg){
+		--sTPB: #{rem(45)};
+	}
+
+	background-color: $gray-840;
+	color: $white;
+	.section-title{
+		h2{}
+	}
+
+	&__row{
+		--bs-gutter-y: #{rem(40)};
+	}
+	&__col{
+		&--left{
+			@include media-breakpoint-up(xl){
+				width: 64% !important;
+			}
+		}
+		&--right{
+
+		}
+	}
+	&__item{
+		@include media-breakpoint-up(xl){
+			max-width: 560px;
+		}
+
+		display: block;
+
+		margin-bottom: rem(18);
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		font-size: 10.5px;
+		@include media-breakpoint-up(sm){
+			font-size: $em-base;
+		}
+	}
+	&__date{
+		display: block;
+		color: $primary;
+		margin-bottom: rem(7);
+	}
+	&__txt{
+		color: $white;
+		line-height: 1.3;
+
+		display: block;
+		& > *:last-child{
+			margin-bottom: 0;
+		}
+
+
+	}
+
+	//-
+	&__{}
+	&__{}
+} // end.sNews

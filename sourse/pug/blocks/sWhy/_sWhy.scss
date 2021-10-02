@@ -1,11 +1,11 @@
 // start .sWhy
 .sWhy {
 	--sPT: 20px;
-	--sPB: 20px;
+	--sPB: 32px;
 	--sTPB: 15px;
 	@include media-breakpoint-up(md){
 		--sPT: #{rem(56)};
-		--sPB: #{rem(90)};
+		--sPB: #{rem(41)};
 		--sTPB: #{rem(45)};
 	}
 	color: $white;
@@ -41,9 +41,9 @@
 			height: 110%;
 		}
 		&--mob{
-			bottom: 0;
+			bottom: var(--sPB);
 			right: 0;
-			width: 54.5%;
+			width: 51.5%;
 			height: 80%;
 			justify-content: flex-end;
 		}

@@ -247,7 +247,11 @@ function eventHandler() {
 	}
 	window.addEventListener('resize', calcHeaderHeight, { passive: true });
 	window.addEventListener('scroll', calcHeaderHeight, { passive: true });
+
+	//for sure
 	calcHeaderHeight();
+	window.setTimeout(calcHeaderHeight, 0);
+	window.setTimeout(calcHeaderHeight, 10);
 
 
 	let defaultSl = {
@@ -454,6 +458,12 @@ function eventHandler() {
 			})
 		}
 	})
+
+	//-wow js
+	let wow = new WOW({
+		mobile: false
+	});
+	wow.init();
 
 	//end luckyOne Js
 };

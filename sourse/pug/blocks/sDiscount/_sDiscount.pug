@@ -1,7 +1,7 @@
 mixin sDiscount(data)
 	// start sDiscount
 	+b.SECTION.sDiscount.section#sDiscount&attributes(attributes)
-		.container
+		.container.fadeIn.wow(data-wow-duration='.4s' data-wow-delay='.3s')
 			+e.bg--dt.d-none.d-md-flex
 				img(loading='lazy' src="img/svg/sDiscount-bg.svg" alt="")
 			+e.bg--mob.d-md-none

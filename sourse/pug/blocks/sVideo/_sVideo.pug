@@ -1,6 +1,6 @@
 mixin sVideo(data)
 	// start sVideo
-	+b.sVideo.section#sVideo&attributes(attributes)
+	+b.sVideo.section.fadeIn.wow(data-wow-duration='.4s' data-wow-delay='.3s')#sVideo&attributes(attributes)
 		+e.container.container-lg
 			+e.slider-wrap
 				.swiper.sVideo-slide-js

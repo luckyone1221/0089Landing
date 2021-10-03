@@ -91,6 +91,7 @@ body {
 }
 
 .main-wrapper {
+	background-color: $primary;
 	padding-top: var(--header-h, 0px);
 	position: relative;
 	width: 100%;

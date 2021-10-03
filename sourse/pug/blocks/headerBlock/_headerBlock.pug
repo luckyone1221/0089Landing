@@ -1,6 +1,6 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock&attributes(attributes)
+	+b.headerBlock.fadeIn.wow(data-wow-duration='.4s' data-wow-delay='.1s')&attributes(attributes)
 		+e.slider-wrap
 			.swiper.headerBlock-slider-js
 				.swiper-wrapper
@@ -19,7 +19,7 @@ mixin headerBlock()
 
 mixin headerBlockBrand()
 	// start headerBlock
-	+b.headerBlock--brand&attributes(attributes)
+	+b.headerBlock--brand.fadeIn.wow(data-wow-duration='.4s' data-wow-delay='.3s')&attributes(attributes)
 		+e.slider-wrap
 			.swiper.headerBlock-slider-js
 				.swiper-wrapper

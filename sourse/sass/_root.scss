@@ -31,4 +31,18 @@
 
 
   --fancybox-bg: rgba(24, 24, 27, .77);
+
+  --header-h: 94px;
+  @include media-breakpoint-up(sm){
+    --header-h: 101px;
+  }
+  @include media-breakpoint-up(md){
+    --header-h: 113px;
+  }
+  @include media-breakpoint-up(lg){
+    --header-h: 98px;
+  }
+  @include media-breakpoint-up(xl){
+    --header-h: #{rem(134)};
+  }
 }

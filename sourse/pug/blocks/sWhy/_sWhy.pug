@@ -14,9 +14,11 @@ mixin sWhy(data)
 					+sWhyItem(`сВое производство`, 'полного цикла')
 					+sWhyItem('бесплатный дизайн', 'при заказе рекламы')
 					+sWhyItem('более 10 лет', `успешной работы <br class="d-none d-sm-block"> на рекламном рынке`)
-			+e.bg--dt.d-none.d-md-flex
+			+pic("sWhy-shadow.png")(class="sWhy__bg sWhy__bg--dt d-none d-md-flex")
+			//-+e.bg--dt.d-none.d-md-flex
 				img(loading="lazy" src="img/@2x/sWhy-shadow.png" alt="")
-		+e.bg--mob.d-md-none
+		+pic("sWhy-shadow.png")(class="sWhy__bg sWhy__bg--mob d-md-none")
+		//-+e.bg--mob.d-md-none
 			img(loading="lazy" src="img/@2x/sWhy-mob-2.png" alt="")
 
 	// end sWhy

@@ -107,6 +107,22 @@
 			height: auto;
 			width: auto;
 			padding: rem(4);
+
+
+			.icon:first-child{
+				display: inline-block;
+			}
+			.icon:last-child{
+				display: none;
+			}
+			&.active{
+				.icon:first-child{
+					display: none;
+				}
+				.icon:last-child{
+					display: inline-block;
+				}
+			}
 		}
 	}
 	&__d-title{

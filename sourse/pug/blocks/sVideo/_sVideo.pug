@@ -23,7 +23,8 @@ mixin sVideoSlide(slideNum)
 		+e.row.row
 			+e.col--right.col-lg
 				+e.video-box(href="https://www.youtube.com/watch?v=i1XzE97bzXw" data-fancybox=`video${slideNum}`)
-					img(loading="lazy" src="img/@2x/sVideo.png" alt="")
+					+pic('sVideo.png')
+					//-img(loading="lazy" src="img/@2x/sVideo.png" alt="")
 			+e.col--left.col-lg-auto.text-lg-end.order-lg-first
 				+e.box
 					+e.b-cont.container

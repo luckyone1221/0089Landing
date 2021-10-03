@@ -8,10 +8,19 @@ mixin sSteps(data)
 			+e.descr
 				p Компания «Центр Рекламы» оснащена высокотехнологичным оборудованием и использует самые современные материалы, устойчивые к воздействию неблагоприятных внешних факторов. Мы внимательно изучаем сферу деятельности клиента и предлагаем ему наиболее действенные варианты. Специалисты выполнят весь комплекс работ:
 			+e.row.row
-				+sStepsItem({
-					imgNum: 1,
-					txt: 'Оставляете заявку',
-				})
+				//-+sStepsItem({
+						imgNum: 1,
+						txt: 'Оставляете заявку',})
+				.col-4.col-xl
+					+e.item.text-center
+						+e.circle-cont
+							+e.circle
+								//-circle-arrow
+								+pic('step-1.png')
+								//-img(loading="lazy" src=`img/@2x/step-1.png` alt="")
+						+e.i-img(href="#")
+							img(loading="lazy" src=`img/svg/step-svg-1.svg` alt="")
+						+e.i-txt Оставляете заявку
 				+sStepsItem({
 					imgNum: 2,
 					txt: 'Бесплатный дизайн-макет',
@@ -42,7 +51,8 @@ mixin sStepsItem(data)
 			+e.circle-cont
 				+e.circle
 					//-circle-arrow
-					img(loading="lazy" src=`img/@2x/step-${data.imgNum}.png` alt="")
+					//-img(loading="lazy" src=`img/@2x/step-${data.imgNum}.png` alt="")
+					+pic(`step-${data.imgNum}.png`)
 			+e.i-img
 				img(loading="lazy" src=`img/svg/step-svg-${data.imgNum}.svg` alt="")
 			+e.i-txt=data.txt

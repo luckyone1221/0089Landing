@@ -144,6 +144,7 @@
 		//}
 	}
 	&__img{
+		background-color: $black;
 		@extend .accept-ratio-frame;
 
 		//@include media-breakpoint-down(sm){
@@ -162,19 +163,19 @@
 		}
 
 		//-
-		img:first-child{
+		picture:first-child img{
 			opacity: 0;
 			z-index: 10;
 		}
-		img:last-child{
+		picture:last-child img{
 			opacity: 1;
 		}
 
 		&:hover{
-			img:first-child{
+			picture:first-child img{
 				opacity: 1;
 			}
-			img:last-child{
+			picture:last-child img{
 				//opacity: 0;
 			}
 		}

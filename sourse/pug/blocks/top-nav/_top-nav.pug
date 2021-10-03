@@ -29,10 +29,17 @@ mixin top-nav()
 					+mnu()
 				.col-auto.ms-auto.d-lg-none
 					+e.order(href="#") Заказать online
-				.col-auto.d-lg-none
-					+e.btn(type="button")
+				.col-auto
+					+e.btn.tn-search-btn-js(type="button")
 						+icon('zoom')
+						+icon('cross')
 				.col-auto.d-lg-none
 					+b.toggle-menu-mobile--js
 						span
+			+e.search.search-js
+				+e.input-wrap
+					+e.INPUT.input.form-control(type="text" placeholder="поиск по сайту")
+					+e.btn-search(type="button")
+						+icon('zoom')
+
 	// end top-nav

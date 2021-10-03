@@ -26,8 +26,9 @@ mixin footer()
 					+footerDMnu()
 				//-
 				.col-auto.d-md-none
-					+e.btn--static(type="button")
+					+e.btn--static.tn-search-btn-js(type="button")
 						+icon('zoom')
+						+icon('cross')
 
 mixin footerDMnu()
 	+e.d-mnu

@@ -1,5 +1,6 @@
 // start .header
 .header {
+	@include mt();
 	position: fixed;
 	//-position: absolute;
 
@@ -7,6 +8,10 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+
+	&.fixed{
+		box-shadow: 0 0 15px 0 rgba($red, .2);
+	}
 
 
 	&__{}

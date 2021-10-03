@@ -67,5 +67,6 @@ mixin sFeedBackSlide(slideNum)
 
 mixin sFeedBackSubSlider(imgNum)
 	.swiper-slide
-		+e.sub-img
+		+pic(`sFeedBack-sub-${imgNum}.png`)(class="sFeedBack__sub-img")
+		//-+e.sub-img
 			img(loading="lazy" src=`img/@2x/sFeedBack-sub-${imgNum}.png` alt="")

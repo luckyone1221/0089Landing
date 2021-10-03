@@ -1,6 +1,6 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock#headerBlock&attributes(attributes)
+	+b.headerBlock&attributes(attributes)
 		+e.slider-wrap
 			.swiper.headerBlock-slider-js
 				.swiper-wrapper
@@ -19,7 +19,7 @@ mixin headerBlock()
 
 mixin headerBlockBrand()
 	// start headerBlock
-	+b.headerBlock--brand#headerBlock&attributes(attributes)
+	+b.headerBlock--brand&attributes(attributes)
 		+e.slider-wrap
 			.swiper.headerBlock-slider-js
 				.swiper-wrapper
@@ -71,5 +71,7 @@ mixin headerBlockSlideBrand()
 mixin headerBlockSlideImg(imgNum)
 	+e.img-col.col-md-6.col-lg-4
 		+e.img(href="#")
-			img(loading="lazy" src=`img/@2x/headerBlock-day-${imgNum}.jpg` alt="")
-			img(loading="lazy" src=`img/@2x/headerBlock-${imgNum}.jpg` alt="")
+			+pic(`headerBlock-day-${imgNum}.jpg`)
+			+pic(`headerBlock-${imgNum}.jpg`)
+			//-img(loading="lazy" src=`img/@2x/headerBlock-day-${imgNum}.jpg` alt="")
+			//-img(loading="lazy" src=`img/@2x/headerBlock-${imgNum}.jpg` alt="")

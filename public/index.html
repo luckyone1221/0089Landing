@@ -74,16 +74,28 @@
 								<a class="top-nav__order" href="#">Заказать online
 								</a>
 							</div>
-							<div class="col-auto d-lg-none">
-								<button class="top-nav__btn" type="button">
+							<div class="col-auto">
+								<button class="top-nav__btn tn-search-btn-js" type="button">
 									<svg class="icon icon-zoom ">
 										<use xlink:href="img/svg/sprite.svg#zoom"></use>
+									</svg>
+									<svg class="icon icon-cross ">
+										<use xlink:href="img/svg/sprite.svg#cross"></use>
 									</svg>
 								</button>
 							</div>
 							<div class="col-auto d-lg-none">
 								<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
 								</div>
+							</div>
+						</div>
+						<div class="top-nav__search search-js">
+							<div class="top-nav__input-wrap"><input class="top-nav__input form-control" type="text" placeholder="поиск по сайту"/>
+								<button class="top-nav__btn-search" type="button">
+									<svg class="icon icon-zoom ">
+										<use xlink:href="img/svg/sprite.svg#zoom"></use>
+									</svg>
+								</button>
 							</div>
 						</div>
 					</div>
@@ -146,7 +158,7 @@
 			</header>
 			<!-- end header-->
 			<!-- start headerBlock-->
-			<div class="headerBlock" id="headerBlock">
+			<div class="headerBlock">
 				<div class="headerBlock__slider-wrap">
 					<div class="swiper headerBlock-slider-js">
 						<div class="swiper-wrapper">
@@ -168,27 +180,123 @@
 									<div class="headerBlock__col headerBlock__col--right col-sm">
 										<div class="headerBlock__img-row row">
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-1.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-1.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-1.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-1.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-1.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-1.jpg"/><img src="img/@2x/headerBlock-day-1.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-1.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-1.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-1.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-1.jpg"/><img src="img/@2x/headerBlock-1.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-2.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-2.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-2.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-2.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-2.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-2.jpg"/><img src="img/@2x/headerBlock-day-2.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-2.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-2.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-2.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-2.jpg"/><img src="img/@2x/headerBlock-2.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-3.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-3.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-3.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-3.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-3.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-3.jpg"/><img src="img/@2x/headerBlock-day-3.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-3.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-3.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-3.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-3.jpg"/><img src="img/@2x/headerBlock-3.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-4.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-4.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-4.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-4.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-4.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-4.jpg"/><img src="img/@2x/headerBlock-day-4.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-4.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-4.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-4.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-4.jpg"/><img src="img/@2x/headerBlock-4.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-5.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-5.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-5.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-5.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-5.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-5.jpg"/><img src="img/@2x/headerBlock-day-5.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-5.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-5.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-5.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-5.jpg"/><img src="img/@2x/headerBlock-5.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-6.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-6.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-6.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-6.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-6.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-6.jpg"/><img src="img/@2x/headerBlock-day-6.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-6.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-6.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-6.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-6.jpg"/><img src="img/@2x/headerBlock-6.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 										</div>
@@ -213,27 +321,123 @@
 									<div class="headerBlock__col headerBlock__col--right col-sm">
 										<div class="headerBlock__img-row row">
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-1.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-1.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-1.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-1.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-1.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-1.jpg"/><img src="img/@2x/headerBlock-day-1.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-1.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-1.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-1.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-1.jpg"/><img src="img/@2x/headerBlock-1.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-2.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-2.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-2.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-2.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-2.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-2.jpg"/><img src="img/@2x/headerBlock-day-2.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-2.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-2.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-2.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-2.jpg"/><img src="img/@2x/headerBlock-2.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-3.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-3.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-3.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-3.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-3.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-3.jpg"/><img src="img/@2x/headerBlock-day-3.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-3.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-3.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-3.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-3.jpg"/><img src="img/@2x/headerBlock-3.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-4.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-4.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-4.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-4.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-4.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-4.jpg"/><img src="img/@2x/headerBlock-day-4.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-4.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-4.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-4.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-4.jpg"/><img src="img/@2x/headerBlock-4.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-5.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-5.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-5.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-5.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-5.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-5.jpg"/><img src="img/@2x/headerBlock-day-5.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-5.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-5.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-5.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-5.jpg"/><img src="img/@2x/headerBlock-5.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-6.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-6.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-6.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-6.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-6.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-6.jpg"/><img src="img/@2x/headerBlock-day-6.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-6.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-6.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-6.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-6.jpg"/><img src="img/@2x/headerBlock-6.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 										</div>
@@ -258,27 +462,123 @@
 									<div class="headerBlock__col headerBlock__col--right col-sm">
 										<div class="headerBlock__img-row row">
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-1.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-1.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-1.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-1.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-1.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-1.jpg"/><img src="img/@2x/headerBlock-day-1.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-1.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-1.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-1.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-1.jpg"/><img src="img/@2x/headerBlock-1.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-2.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-2.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-2.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-2.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-2.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-2.jpg"/><img src="img/@2x/headerBlock-day-2.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-2.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-2.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-2.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-2.jpg"/><img src="img/@2x/headerBlock-2.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-3.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-3.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-3.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-3.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-3.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-3.jpg"/><img src="img/@2x/headerBlock-day-3.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-3.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-3.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-3.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-3.jpg"/><img src="img/@2x/headerBlock-3.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-4.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-4.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-4.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-4.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-4.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-4.jpg"/><img src="img/@2x/headerBlock-day-4.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-4.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-4.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-4.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-4.jpg"/><img src="img/@2x/headerBlock-4.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-5.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-5.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-5.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-5.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-5.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-5.jpg"/><img src="img/@2x/headerBlock-day-5.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-5.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-5.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-5.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-5.jpg"/><img src="img/@2x/headerBlock-5.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-6.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-6.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-6.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-6.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-6.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-6.jpg"/><img src="img/@2x/headerBlock-day-6.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-6.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-6.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-6.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-6.jpg"/><img src="img/@2x/headerBlock-6.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 										</div>
@@ -424,11 +724,19 @@
 						<div class="col-4 col-xl">
 							<div class="sSteps__item text-center">
 								<div class="sSteps__circle-cont">
-									<div class="sSteps__circle"><img loading="lazy" src="img/@2x/step-1.png" alt=""/>
+									<div class="sSteps__circle">
+										<!-- picture-->
+										<picture> 
+											<source type="image/webp" srcset="img/@2x/webp/step-1.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/step-1.webp"/>
+											<source type="image/png" srcset="img/@2x/step-1.png" media="(min-width:576px)"/>
+											<source type="image/png" srcset="img/@1x/step-1.png"/><img src="img/@2x/step-1.png" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
 									</div>
 								</div>
-								<div class="sSteps__i-img"><img loading="lazy" src="img/svg/step-svg-1.svg" alt=""/>
-								</div>
+								<a class="sSteps__i-img" href="#"><img loading="lazy" src="img/svg/step-svg-1.svg" alt=""/>
+								</a>
 								<div class="sSteps__i-txt">Оставляете заявку
 								</div>
 							</div>
@@ -436,7 +744,15 @@
 						<div class="col-4 col-xl">
 							<div class="sSteps__item text-center">
 								<div class="sSteps__circle-cont">
-									<div class="sSteps__circle"><img loading="lazy" src="img/@2x/step-2.png" alt=""/>
+									<div class="sSteps__circle">
+										<!-- picture-->
+										<picture> 
+											<source type="image/webp" srcset="img/@2x/webp/step-2.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/step-2.webp"/>
+											<source type="image/png" srcset="img/@2x/step-2.png" media="(min-width:576px)"/>
+											<source type="image/png" srcset="img/@1x/step-2.png"/><img src="img/@2x/step-2.png" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
 									</div>
 								</div>
 								<div class="sSteps__i-img"><img loading="lazy" src="img/svg/step-svg-2.svg" alt=""/>
@@ -448,7 +764,15 @@
 						<div class="col-4 col-xl">
 							<div class="sSteps__item text-center">
 								<div class="sSteps__circle-cont">
-									<div class="sSteps__circle"><img loading="lazy" src="img/@2x/step-3.png" alt=""/>
+									<div class="sSteps__circle">
+										<!-- picture-->
+										<picture> 
+											<source type="image/webp" srcset="img/@2x/webp/step-3.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/step-3.webp"/>
+											<source type="image/png" srcset="img/@2x/step-3.png" media="(min-width:576px)"/>
+											<source type="image/png" srcset="img/@1x/step-3.png"/><img src="img/@2x/step-3.png" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
 									</div>
 								</div>
 								<div class="sSteps__i-img"><img loading="lazy" src="img/svg/step-svg-3.svg" alt=""/>
@@ -460,7 +784,15 @@
 						<div class="col-4 col-xl">
 							<div class="sSteps__item text-center">
 								<div class="sSteps__circle-cont">
-									<div class="sSteps__circle"><img loading="lazy" src="img/@2x/step-4.png" alt=""/>
+									<div class="sSteps__circle">
+										<!-- picture-->
+										<picture> 
+											<source type="image/webp" srcset="img/@2x/webp/step-4.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/step-4.webp"/>
+											<source type="image/png" srcset="img/@2x/step-4.png" media="(min-width:576px)"/>
+											<source type="image/png" srcset="img/@1x/step-4.png"/><img src="img/@2x/step-4.png" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
 									</div>
 								</div>
 								<div class="sSteps__i-img"><img loading="lazy" src="img/svg/step-svg-4.svg" alt=""/>
@@ -472,7 +804,15 @@
 						<div class="col-4 col-xl">
 							<div class="sSteps__item text-center">
 								<div class="sSteps__circle-cont">
-									<div class="sSteps__circle"><img loading="lazy" src="img/@2x/step-5.png" alt=""/>
+									<div class="sSteps__circle">
+										<!-- picture-->
+										<picture> 
+											<source type="image/webp" srcset="img/@2x/webp/step-5.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/step-5.webp"/>
+											<source type="image/png" srcset="img/@2x/step-5.png" media="(min-width:576px)"/>
+											<source type="image/png" srcset="img/@1x/step-5.png"/><img src="img/@2x/step-5.png" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
 									</div>
 								</div>
 								<div class="sSteps__i-img"><img loading="lazy" src="img/svg/step-svg-5.svg" alt=""/>
@@ -484,7 +824,15 @@
 						<div class="col-4 col-xl">
 							<div class="sSteps__item text-center">
 								<div class="sSteps__circle-cont">
-									<div class="sSteps__circle"><img loading="lazy" src="img/@2x/step-6.png" alt=""/>
+									<div class="sSteps__circle">
+										<!-- picture-->
+										<picture> 
+											<source type="image/webp" srcset="img/@2x/webp/step-6.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/step-6.webp"/>
+											<source type="image/png" srcset="img/@2x/step-6.png" media="(min-width:576px)"/>
+											<source type="image/png" srcset="img/@1x/step-6.png"/><img src="img/@2x/step-6.png" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
 									</div>
 								</div>
 								<div class="sSteps__i-img"><img loading="lazy" src="img/svg/step-svg-6.svg" alt=""/>
@@ -562,13 +910,13 @@
 					</div>
 					<div class="sDiscount__t-title">новые акции и предложения через
 					</div>
-					<div class="sDiscount__timer-box timer-box-js"><span class="days">18</span><span class="hours">22</span><span class="minutes">59</span><span class="seconds">03</span>
+					<div class="sDiscount__timer-box timer-box-js" data-date="2021-10-06"><span class="days">18</span><span class="hours">22</span><span class="minutes">59</span><span class="seconds">03</span>
 					</div>
 				</div>
 			</section>
 			<!-- end sDiscount-->
 			<!-- start headerBlock-->
-			<div class="headerBlock headerBlock--brand" id="headerBlock">
+			<div class="headerBlock headerBlock--brand">
 				<div class="headerBlock__slider-wrap">
 					<div class="swiper headerBlock-slider-js">
 						<div class="swiper-wrapper">
@@ -577,27 +925,123 @@
 									<div class="headerBlock__col headerBlock__col--right col-sm">
 										<div class="headerBlock__img-row row">
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-1.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-1.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-1.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-1.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-1.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-1.jpg"/><img src="img/@2x/headerBlock-day-1.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-1.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-1.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-1.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-1.jpg"/><img src="img/@2x/headerBlock-1.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-2.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-2.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-2.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-2.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-2.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-2.jpg"/><img src="img/@2x/headerBlock-day-2.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-2.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-2.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-2.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-2.jpg"/><img src="img/@2x/headerBlock-2.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-3.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-3.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-3.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-3.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-3.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-3.jpg"/><img src="img/@2x/headerBlock-day-3.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-3.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-3.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-3.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-3.jpg"/><img src="img/@2x/headerBlock-3.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-4.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-4.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-4.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-4.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-4.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-4.jpg"/><img src="img/@2x/headerBlock-day-4.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-4.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-4.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-4.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-4.jpg"/><img src="img/@2x/headerBlock-4.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-5.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-5.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-5.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-5.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-5.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-5.jpg"/><img src="img/@2x/headerBlock-day-5.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-5.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-5.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-5.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-5.jpg"/><img src="img/@2x/headerBlock-5.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-6.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-6.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-6.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-6.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-6.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-6.jpg"/><img src="img/@2x/headerBlock-day-6.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-6.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-6.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-6.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-6.jpg"/><img src="img/@2x/headerBlock-6.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 										</div>
@@ -619,27 +1063,123 @@
 									<div class="headerBlock__col headerBlock__col--right col-sm">
 										<div class="headerBlock__img-row row">
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-1.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-1.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-1.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-1.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-1.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-1.jpg"/><img src="img/@2x/headerBlock-day-1.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-1.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-1.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-1.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-1.jpg"/><img src="img/@2x/headerBlock-1.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-2.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-2.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-2.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-2.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-2.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-2.jpg"/><img src="img/@2x/headerBlock-day-2.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-2.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-2.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-2.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-2.jpg"/><img src="img/@2x/headerBlock-2.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-3.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-3.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-3.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-3.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-3.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-3.jpg"/><img src="img/@2x/headerBlock-day-3.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-3.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-3.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-3.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-3.jpg"/><img src="img/@2x/headerBlock-3.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-4.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-4.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-4.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-4.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-4.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-4.jpg"/><img src="img/@2x/headerBlock-day-4.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-4.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-4.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-4.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-4.jpg"/><img src="img/@2x/headerBlock-4.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-5.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-5.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-5.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-5.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-5.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-5.jpg"/><img src="img/@2x/headerBlock-day-5.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-5.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-5.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-5.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-5.jpg"/><img src="img/@2x/headerBlock-5.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-6.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-6.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-6.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-6.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-6.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-6.jpg"/><img src="img/@2x/headerBlock-day-6.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-6.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-6.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-6.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-6.jpg"/><img src="img/@2x/headerBlock-6.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 										</div>
@@ -661,27 +1201,123 @@
 									<div class="headerBlock__col headerBlock__col--right col-sm">
 										<div class="headerBlock__img-row row">
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-1.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-1.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-1.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-1.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-1.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-1.jpg"/><img src="img/@2x/headerBlock-day-1.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-1.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-1.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-1.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-1.jpg"/><img src="img/@2x/headerBlock-1.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-2.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-2.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-2.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-2.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-2.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-2.jpg"/><img src="img/@2x/headerBlock-day-2.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-2.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-2.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-2.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-2.jpg"/><img src="img/@2x/headerBlock-2.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-3.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-3.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-3.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-3.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-3.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-3.jpg"/><img src="img/@2x/headerBlock-day-3.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-3.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-3.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-3.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-3.jpg"/><img src="img/@2x/headerBlock-3.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-4.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-4.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-4.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-4.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-4.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-4.jpg"/><img src="img/@2x/headerBlock-day-4.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-4.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-4.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-4.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-4.jpg"/><img src="img/@2x/headerBlock-4.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-5.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-5.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-5.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-5.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-5.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-5.jpg"/><img src="img/@2x/headerBlock-day-5.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-5.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-5.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-5.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-5.jpg"/><img src="img/@2x/headerBlock-5.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 											<div class="headerBlock__img-col col-md-6 col-lg-4">
-												<a class="headerBlock__img" href="#"><img loading="lazy" src="img/@2x/headerBlock-day-6.jpg" alt=""/><img loading="lazy" src="img/@2x/headerBlock-6.jpg" alt=""/>
+												<a class="headerBlock__img" href="#">
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-day-6.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-day-6.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-day-6.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-day-6.jpg"/><img src="img/@2x/headerBlock-day-6.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+													<!-- picture-->
+													<picture> 
+														<source type="image/webp" srcset="img/@2x/webp/headerBlock-6.webp" media="(min-width:576px)"/>
+														<source type="image/webp" srcset="img/@1x/webp/headerBlock-6.webp"/>
+														<source type="image/jpg" srcset="img/@2x/headerBlock-6.jpg" media="(min-width:576px)"/>
+														<source type="image/jpg" srcset="img/@1x/headerBlock-6.jpg"/><img src="img/@2x/headerBlock-6.jpg" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
 												</a>
 											</div>
 										</div>
@@ -770,11 +1406,23 @@
 							</a>
 						</div>
 					</div>
-					<div class="sWhy__bg sWhy__bg--dt d-none d-md-flex"><img loading="lazy" src="img/@2x/sWhy-shadow.png" alt=""/>
-					</div>
+					<!-- picture-->
+					<picture class="sWhy__bg sWhy__bg--dt d-none d-md-flex"> 
+						<source type="image/webp" srcset="img/@2x/webp/sWhy-shadow.webp" media="(min-width:576px)"/>
+						<source type="image/webp" srcset="img/@1x/webp/sWhy-shadow.webp"/>
+						<source type="image/png" srcset="img/@2x/sWhy-shadow.png" media="(min-width:576px)"/>
+						<source type="image/png" srcset="img/@1x/sWhy-shadow.png"/><img src="img/@2x/sWhy-shadow.png" alt="" loading="lazy"/>
+					</picture>
+					<!-- /picture-->
 				</div>
-				<div class="sWhy__bg sWhy__bg--mob d-md-none"><img loading="lazy" src="img/@2x/sWhy-mob-2.png" alt=""/>
-				</div>
+				<!-- picture-->
+				<picture class="sWhy__bg sWhy__bg--mob d-md-none"> 
+					<source type="image/webp" srcset="img/@2x/webp/sWhy-shadow.webp" media="(min-width:576px)"/>
+					<source type="image/webp" srcset="img/@1x/webp/sWhy-shadow.webp"/>
+					<source type="image/png" srcset="img/@2x/sWhy-shadow.png" media="(min-width:576px)"/>
+					<source type="image/png" srcset="img/@1x/sWhy-shadow.png"/><img src="img/@2x/sWhy-shadow.png" alt="" loading="lazy"/>
+				</picture>
+				<!-- /picture-->
 			</section>
 			<!-- end sWhy-->
 			<!-- start sFeedBack-->
@@ -1078,24 +1726,54 @@
 							<div class="swiper sFeedBack-thumb-slider-js">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
-										<div class="sFeedBack__sub-img"><img loading="lazy" src="img/@2x/sFeedBack-sub-1.png" alt=""/>
-										</div>
+										<!-- picture-->
+										<picture class="sFeedBack__sub-img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sFeedBack-sub-1.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sFeedBack-sub-1.webp"/>
+											<source type="image/png" srcset="img/@2x/sFeedBack-sub-1.png" media="(min-width:576px)"/>
+											<source type="image/png" srcset="img/@1x/sFeedBack-sub-1.png"/><img src="img/@2x/sFeedBack-sub-1.png" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
 									</div>
 									<div class="swiper-slide">
-										<div class="sFeedBack__sub-img"><img loading="lazy" src="img/@2x/sFeedBack-sub-2.png" alt=""/>
-										</div>
+										<!-- picture-->
+										<picture class="sFeedBack__sub-img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sFeedBack-sub-2.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sFeedBack-sub-2.webp"/>
+											<source type="image/png" srcset="img/@2x/sFeedBack-sub-2.png" media="(min-width:576px)"/>
+											<source type="image/png" srcset="img/@1x/sFeedBack-sub-2.png"/><img src="img/@2x/sFeedBack-sub-2.png" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
 									</div>
 									<div class="swiper-slide">
-										<div class="sFeedBack__sub-img"><img loading="lazy" src="img/@2x/sFeedBack-sub-3.png" alt=""/>
-										</div>
+										<!-- picture-->
+										<picture class="sFeedBack__sub-img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sFeedBack-sub-3.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sFeedBack-sub-3.webp"/>
+											<source type="image/png" srcset="img/@2x/sFeedBack-sub-3.png" media="(min-width:576px)"/>
+											<source type="image/png" srcset="img/@1x/sFeedBack-sub-3.png"/><img src="img/@2x/sFeedBack-sub-3.png" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
 									</div>
 									<div class="swiper-slide">
-										<div class="sFeedBack__sub-img"><img loading="lazy" src="img/@2x/sFeedBack-sub-4.png" alt=""/>
-										</div>
+										<!-- picture-->
+										<picture class="sFeedBack__sub-img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sFeedBack-sub-4.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sFeedBack-sub-4.webp"/>
+											<source type="image/png" srcset="img/@2x/sFeedBack-sub-4.png" media="(min-width:576px)"/>
+											<source type="image/png" srcset="img/@1x/sFeedBack-sub-4.png"/><img src="img/@2x/sFeedBack-sub-4.png" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
 									</div>
 									<div class="swiper-slide">
-										<div class="sFeedBack__sub-img"><img loading="lazy" src="img/@2x/sFeedBack-sub-5.png" alt=""/>
-										</div>
+										<!-- picture-->
+										<picture class="sFeedBack__sub-img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sFeedBack-sub-5.webp" media="(min-width:576px)"/>
+											<source type="image/webp" srcset="img/@1x/webp/sFeedBack-sub-5.webp"/>
+											<source type="image/png" srcset="img/@2x/sFeedBack-sub-5.png" media="(min-width:576px)"/>
+											<source type="image/png" srcset="img/@1x/sFeedBack-sub-5.png"/><img src="img/@2x/sFeedBack-sub-5.png" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
 									</div>
 								</div>
 								<div class="sFeedBack__alt-prev swiper-prev"><img loading="lazy" src="img/svg/box-left.svg" alt=""/>
@@ -1165,7 +1843,15 @@
 								<div class="swiper-slide">
 									<div class="sVideo__row row">
 										<div class="sVideo__col sVideo__col--right col-lg">
-											<a class="sVideo__video-box" href="https://www.youtube.com/watch?v=i1XzE97bzXw" data-fancybox="video1"><img loading="lazy" src="img/@2x/sVideo.png" alt=""/>
+											<a class="sVideo__video-box" href="https://www.youtube.com/watch?v=i1XzE97bzXw" data-fancybox="video1">
+												<!-- picture-->
+												<picture> 
+													<source type="image/webp" srcset="img/@2x/webp/sVideo.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/sVideo.webp"/>
+													<source type="image/png" srcset="img/@2x/sVideo.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/sVideo.png"/><img src="img/@2x/sVideo.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
 											</a>
 										</div>
 										<div class="sVideo__col sVideo__col--left col-lg-auto text-lg-end order-lg-first">
@@ -1185,7 +1871,15 @@
 								<div class="swiper-slide">
 									<div class="sVideo__row row">
 										<div class="sVideo__col sVideo__col--right col-lg">
-											<a class="sVideo__video-box" href="https://www.youtube.com/watch?v=i1XzE97bzXw" data-fancybox="video2"><img loading="lazy" src="img/@2x/sVideo.png" alt=""/>
+											<a class="sVideo__video-box" href="https://www.youtube.com/watch?v=i1XzE97bzXw" data-fancybox="video2">
+												<!-- picture-->
+												<picture> 
+													<source type="image/webp" srcset="img/@2x/webp/sVideo.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/sVideo.webp"/>
+													<source type="image/png" srcset="img/@2x/sVideo.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/sVideo.png"/><img src="img/@2x/sVideo.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
 											</a>
 										</div>
 										<div class="sVideo__col sVideo__col--left col-lg-auto text-lg-end order-lg-first">
@@ -1205,7 +1899,15 @@
 								<div class="swiper-slide">
 									<div class="sVideo__row row">
 										<div class="sVideo__col sVideo__col--right col-lg">
-											<a class="sVideo__video-box" href="https://www.youtube.com/watch?v=i1XzE97bzXw" data-fancybox="video3"><img loading="lazy" src="img/@2x/sVideo.png" alt=""/>
+											<a class="sVideo__video-box" href="https://www.youtube.com/watch?v=i1XzE97bzXw" data-fancybox="video3">
+												<!-- picture-->
+												<picture> 
+													<source type="image/webp" srcset="img/@2x/webp/sVideo.webp" media="(min-width:576px)"/>
+													<source type="image/webp" srcset="img/@1x/webp/sVideo.webp"/>
+													<source type="image/png" srcset="img/@2x/sVideo.png" media="(min-width:576px)"/>
+													<source type="image/png" srcset="img/@1x/sVideo.png"/><img src="img/@2x/sVideo.png" alt="" loading="lazy"/>
+												</picture>
+												<!-- /picture-->
 											</a>
 										</div>
 										<div class="sVideo__col sVideo__col--left col-lg-auto text-lg-end order-lg-first">
@@ -1382,9 +2084,12 @@
 							</div>
 						</div>
 						<div class="col-auto d-md-none">
-							<button class="footer__btn footer__btn--static" type="button">
+							<button class="footer__btn footer__btn--static tn-search-btn-js" type="button">
 								<svg class="icon icon-zoom ">
 									<use xlink:href="img/svg/sprite.svg#zoom"></use>
+								</svg>
+								<svg class="icon icon-cross ">
+									<use xlink:href="img/svg/sprite.svg#cross"></use>
 								</svg>
 							</button>
 						</div>

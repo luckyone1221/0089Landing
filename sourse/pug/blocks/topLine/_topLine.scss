@@ -82,6 +82,7 @@
 			margin-right: 0;
 		}
 		.icon{
+			@include mt();
 			color: $white;
 		}
 

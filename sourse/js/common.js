@@ -326,16 +326,23 @@ function eventHandler() {
 		let minutes = parent.querySelector('.minutes');
 		let seconds = parent.querySelector('.seconds');
 
-		//date elements
 		let now = new Date();
+		let targetDate;
+		let dateAttr = parent.getAttribute('data-date');
 
-		// d === days.innerHtml + now.getDate... others the same way
-		let d = getTime(days, now.getDate());
-		let h = getTime(hours, now.getHours());
-		let m = getTime(minutes, now.getMinutes());
-		let s = getTime(seconds, now.getSeconds());
+		if (dateAttr){
+			targetDate= new Date(dateAttr);
+		}
+		else{
+			// d === days.innerHtml + now.getDate... others the same way
+			let d = getTime(days, now.getDate());
+			let h = getTime(hours, now.getHours());
+			let m = getTime(minutes, now.getMinutes());
+			let s = getTime(seconds, now.getSeconds());
+			targetDate = new Date(now.getFullYear(), now.getMonth(), d, h, m, s);
+		}
 
-		let targetDate = new Date(now.getFullYear(), now.getMonth(), d, h, m, s);
+		//date elements
 
 		//interval
 		let ThisReadOutID = window.setInterval(tikTakReadOut.bind(null,parent, targetDate, null, days, hours, minutes, seconds), 1000);
@@ -429,6 +436,24 @@ function eventHandler() {
 			clickable: true,
 		},
 	});
+
+	//.tn-search-btn-js
+	$('.tn-search-btn-js').click(function (){
+		$('.tn-search-btn-js').toggleClass('active');
+		$('.search-js').slideToggle(function (){
+			$(this).toggleClass('active');
+		})
+	})
+
+	document.addEventListener('click',function (){
+		//
+		if(!event.target.closest('.search-js') && !event.target.closest('.tn-search-btn-js')){
+			$('.tn-search-btn-js').removeClass('active');
+			$('.search-js').slideUp(function (){
+				$(this).removeClass('active');
+			})
+		}
+	})
 
 	//end luckyOne Js
 };

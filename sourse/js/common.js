@@ -336,6 +336,7 @@ function eventHandler() {
 
 		if (dateAttr){
 			targetDate= new Date(dateAttr);
+			console.log(targetDate);
 		}
 		else{
 			// d === days.innerHtml + now.getDate... others the same way

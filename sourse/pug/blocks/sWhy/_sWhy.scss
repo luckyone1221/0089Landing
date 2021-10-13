@@ -22,7 +22,6 @@
 		z-index: -1;
 		pointer-events: none;
 
-
 		display: flex;
 		align-items: flex-end;
 		justify-content: flex-start;
@@ -102,6 +101,9 @@
 	}
 	&__col{
 		&--right{
+			@include media-breakpoint-up(xl){
+				--descr-me: auto;
+			}
 			.sWhy__item{
 				@include media-breakpoint-up(xxl){
 					padding-right: 33px;
@@ -164,6 +166,11 @@
 			font-size: rem(18);
 		}
 		line-height: 1;
+
+		@include media-breakpoint-up(xl){
+			max-width: 266px;
+			margin-left: var(--descr-me, 0);
+		}
 	}
 	&__{}
 	&__{}
